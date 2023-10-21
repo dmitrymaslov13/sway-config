@@ -15,7 +15,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 # Recommends: foot
-set $term foot
+set $term wezterm
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -235,4 +235,12 @@ input "1267:12553:ELAN2204:00_04F3:3109_Touchpad" {
     middle_emulation enabled
     pointer_accel -0.1 
     scroll_factor 0.7
+}
+
+output HDMI-A-1 pos 0 0 
+output eDP-1 pos 0 1080
+
+input "type:keyboard" {
+    xkb_layout us,ru
+    xkb_options grp:win_space_toggle
 }
